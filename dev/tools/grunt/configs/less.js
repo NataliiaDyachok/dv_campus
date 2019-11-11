@@ -19,6 +19,7 @@ _.each(themes, function(theme, name) {
 
 var lessOptions = {
     options: {
+        outputSourseFiles: true,
         sourceMap: true,
         strictImports: false,
         sourceMapRootpath: '/',
