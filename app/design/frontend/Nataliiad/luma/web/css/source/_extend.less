@@ -1,0 +1,289 @@
+//@button-primary__background: @color-dark-green1;
+//@border-color__base: darken(@color-blue-pure, 18%);
+//@border-width__base: 1px;
+
+//  Colors
+//@text__color: @primary__color;
+//@text__color__intense: @primary__color__darker;
+//@text__color__muted: @primary__color__lighter;
+
+//@heading__color__base: @primary__color__darker;
+//@h1__font-color: @heading__color__base;
+
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Color variables
+//  _____________________________________________
+
+@secondary__color: @color-blue3;
+
+@secondary__color__darken: darken( @color-blue3, 15%);
+
+@secondary__color__light: lighten(@secondary__color, 5%);
+@navigation__background: @secondary__color__light;
+
+//@navigation-level0-item__color: @color-white;
+//@primary__color: @color-white;
+
+@navigation-desktop-level0-item__color: @color-white;
+@submenu-desktop-item__color: @color-gray34;
+
+@navigation-desktop-level0-item__hover__color: @color-gray-light1;
+@submenu-desktop-item__hover__color: @navigation-desktop-level0-item__hover__color;
+
+@submenu-desktop-item__color: @secondary__color;
+
+//@navigation-level0-item__background: @color-white;
+//@breadcrumbs-current__color: @color-white;
+//@pager-action__background: @color-white;
+
+.page-header .panel.wrapper {
+  background-color: @secondary__color__darken;
+  color: #ffffff;
+}
+
+
+
+.page-footer {
+  background-color: @color-blue3;
+  font-size: 1.6rem;
+  margin: 0 -15px;
+  color: @color-white;
+}
+
+.footer.content .links strong {
+  color: @color-white;
+  font-weight: normal;
+}
+.footer.content .links a {
+  color: @color-white;
+  text-decoration: none;
+}
+.footer.content .links a:visited {
+  color: @color-orange-red1;
+  text-decoration: none;
+}
+.footer.content .links a:hover {
+  color: @color-orange-red1;
+  text-decoration: underline;
+}
+.footer.content .links a:active {
+  color: #333333;
+  text-decoration: underline;
+}
+
+/*
+.message.global.cookie .actions {
+  margin-top: 10px;
+  color: @color-white;
+  background-color: @color-orange-red1;
+}
+ */
+
+/*
+.action-primary:focus,
+.action-primary:active {
+  background: @color-orange-red1;
+  border: 1px solid @color-white;
+  color: @color-white;
+}
+.action-primary:hover {
+  background: @color-orange-red1;
+  border: 1px solid @color-white;
+  color: @color-white;
+}
+ */
+
+.block.newsletter .action.subscribe {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: -1px;
+  white-space: nowrap;
+
+  background: @color-orange-red1;
+  border: 1px solid @color-white;
+  color: @color-white;
+}
+
+.block.newsletter .mage-error{
+  color: @color-white;
+}
+
+.copyright{
+  background: @secondary__color__darken;
+  display: block;
+}
+
+
+.message.info {
+  margin: 0 0 10px;
+  padding: 12px 20px 12px 25px;
+  display: block;
+  font-size: 1.3rem;
+  background: #fdf0d5;
+  color: @color-blue1;
+  //color: #6f4400;
+  padding-left: 45px;
+  position: relative;
+}
+.message.info a {
+  color: #006bb4;
+}
+.message.info a:hover {
+  color: #006bb4;
+}
+.message.info a:active {
+  color: #006bb4;
+}
+.message.info > *:first-child:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  line-height: 24px;
+  color: @color-blue1;
+  //color: #c07600;
+  content: '\e602';
+  font-family: 'luma-icons';
+  margin: -12px 0 0;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: normal;
+  overflow: hidden;
+  speak: none;
+  left: 0;
+  top: 22px;
+  width: 45px;
+  position: absolute;
+  text-align: center;
+}
+
+
+.message.warning {
+  margin: 0 0 10px;
+  padding: 12px 20px 12px 25px;
+  display: block;
+  font-size: 1.3rem;
+  background: #fdf0d5;
+  color: #6f4400;
+  padding-left: 45px;
+  position: relative;
+}
+.message.warning a {
+  color: @color-red9;
+}
+.message.warning a:hover {
+  color: @color-red9;
+}
+.message.warning a:active {
+  color: @color-red9;
+}
+.message.warning > *:first-child:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  line-height: 24px;
+  color: #c07600;
+  content: '\e602';
+  font-family: 'luma-icons';
+  margin: -12px 0 0;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: normal;
+  overflow: hidden;
+  speak: none;
+  left: 0;
+  top: 22px;
+  width: 45px;
+  position: absolute;
+  text-align: center;
+}
+
+//.message.success a {
+.message.success {
+  color: @secondary__color__darken;
+}
+.message.success a:hover {
+  color: #006bb4;
+}
+.message.success a:active {
+  color: #006bb4;
+}
+.message.success > *:first-child:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  line-height: 24px;
+  color: #006bb4;
+  content: '\e60e';
+  font-family: 'luma-icons';
+  margin: -12px 0 0;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: normal;
+  overflow: hidden;
+  speak: none;
+  left: 0;
+  top: 22px;
+  width: 45px;
+  position: absolute;
+  text-align: center;
+}
+
+/*
+// product.data.items
+.product.data.items > .item.title{
+  background-color: @secondary__color__darken;
+}
+
+.product.data.items > .item.title > .switch {
+  border-top: 1px solid #cccccc;
+  height: 40px;
+  padding: 1px 10px 1px 10px;
+  font-weight: 600;
+  line-height: 40px;
+  font-size: 1.4rem;
+  color: #333333;
+  text-decoration: none;
+}
+.product.data.items > .item.title > .switch:visited {
+  color: #6d6d6d;
+  text-decoration: none;
+  //background-color: @secondary__color;
+}
+.product.data.items > .item.title > .switch:hover {
+  color: #333333;
+  text-decoration: none;
+ // background-color: @secondary__color;
+}
+.product.data.items > .item.title > .switch:active {
+  color: #333333;
+  text-decoration: none;
+ // background-color: @secondary__color;
+}
+
+ */
+
+//  Tabs
+//  ---------------------------------------------
+
+@tab-control__background-color: @secondary__color__darken;
+@tab-control__color: @color-white;
+@tab-control__hover__color: @color-white;
+@tab-control__active__color: @color-white;
+@tab-content__background-color: @color-white;
+
+//  Links
+//  ---------------------------------------------
+
+@color__orange: @color-orange-red1;
+@link__color__dark: darken(@color__orange, 18%);
+@link__color__light: lighten(@color__orange, 5%);
+
+@link__color: @color__orange;
+@link__visited__color: @link__color__light;
+@link__hover__color: @link__color__dark;
+@link__active__color: @link__color__dark;
